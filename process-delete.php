@@ -13,8 +13,5 @@ $stmt->bind_param('s', $_GET['id']);
 
 $stmt->execute();
 
-// $result = $stmt->get_result();
-
-// if ($result) {
 header("Location: index.php");
 $_SESSION['message'] = 'Berhasil mengubah data.';
